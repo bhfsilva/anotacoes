@@ -1,0 +1,3 @@
+.obsidian
+*.md
+!/dev/livros/sicp/**/*.md
