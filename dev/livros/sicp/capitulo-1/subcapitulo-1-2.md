@@ -1,5 +1,5 @@
 ---
-updated-at: 26/01/2026 20:06
+updated-at: 04/02/2026 20:37
 created-at: 15/12/2025 10:35
 ---
 
@@ -7,7 +7,7 @@ created-at: 15/12/2025 10:35
 
 > [!example] Tabela de conteúdos
 > - [1.2. Funções e os processos que elas geram](#1.2.%20Funções%20e%20os%20processos%20que%20elas%20geram)
-> 	- [1.2.1.Recursão e iteração lineares](#1.2.1.%20Recursão%20e%20iteração%20lineares)
+> 	- [1.2.1. Recursão e iteração lineares](#1.2.1.%20Recursão%20e%20iteração%20lineares)
 > 	- [1.2.2. Recursão em árvore](#1.2.2.%20Recursão%20em%20árvore)
 
 # 1.2. Funções e os processos que elas geram

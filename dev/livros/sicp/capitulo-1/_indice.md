@@ -1,6 +1,6 @@
 ---
 title: capitulo-1
-updated-at: 26/01/2026 16:04
+updated-at: 26/01/2026 20:13
 created-at: 01/12/2025 22:41
 ---
 
@@ -21,7 +21,7 @@ created-at: 01/12/2025 22:41
 > 		- [Nomes locais](dev/livros/sicp/capitulo-1/subcapitulo-1-1.md#Nomes%20locais)
 > 		- [Definição interna e estrutura de blocos](dev/livros/sicp/capitulo-1/subcapitulo-1-1.md#Definição%20interna%20e%20estrutura%20de%20blocos)
 > - [1.2. Funções e os processos que elas geram](dev/livros/sicp/capitulo-1/subcapitulo-1-2.md#1.2.%20Funções%20e%20os%20processos%20que%20elas%20geram)
-> 	- [1.2.1.Recursão e iteração lineares](#1.2.1.%20Recursão%20e%20iteração%20lineares)
+> 	- [1.2.1. Recursão e iteração lineares](dev/livros/sicp/capitulo-1/subcapitulo-1-2.md#1.2.1.%20Recursão%20e%20iteração%20lineares)
 > 	- [1.2.2. Recursão em árvore](dev/livros/sicp/capitulo-1/subcapitulo-1-2.md#1.2.2.%20Recursão%20em%20árvore)
 
 # Introdução
