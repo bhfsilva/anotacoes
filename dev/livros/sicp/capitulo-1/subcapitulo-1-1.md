@@ -1,9 +1,9 @@
 ---
-updated-at: 26/01/2026 14:25
+updated-at: 12/02/2026 22:15
 created-at: 01/12/2025 22:42
 ---
 
-> O conteúdo se baseia no subcapítulo [1.1. The Elements of Programming](https://web.mit.edu/6.001/6.037/sicp.pdf#page=34).
+> O conteúdo se baseia no subcapítulo [1.1. The Elements of Programming](https://web.mit.edu/6.001/6.037/sicp.pdf#section.1.1).
 
 > [!example] Tabela de conteúdos
 > - [1.1. Elementos da programação](#1.1.%20Elementos%20da%20programação)
@@ -203,16 +203,16 @@ $> (define (square x) (* x x))
 - A forma (sintaxe) mais simples de se definir uma função é:
 
 ```
-(define (<nome> <parâmetros>) <corpo>)
+(define ({nome} {parâmetros}) {corpo})
 ```
  
 - Onde:
-	- `<nome>` → São os símbolos que nomearão a definição (i.e. `<corpo>`) da função no ambiente;
-	- `<parâmetros>` → São os nomes que serão usados na definição da função para identificar os argumentos passados;
-	- `<corpo>` → É uma expressão que armazena o valor da aplicação da função quando os parâmetros forem substituídos pelos argumentos.
+	- `{nome}` → São os símbolos que nomearão a definição (i.e. `{corpo}`) da função no ambiente;
+	- `{parâmetros}` → São os nomes que serão usados na definição da função para identificar os argumentos passados;
+	- `{corpo}` → É uma expressão que armazena o valor da aplicação da função quando os parâmetros forem substituídos pelos argumentos.
 
 > [!info]
-> - A definição da função (`<nome>` e `<parâmetros>`) são agrupados por parênteses (`()`), assim como a própria chamada da função.
+> - A definição da função (`{nome}` e `{parâmetros}`) são agrupados por parênteses (`()`), assim como a própria chamada da função.
 
 - Podemos executar nossa função `square`:
 
@@ -311,18 +311,18 @@ $> (define (abs x)
 - A forma (estutura) de uma expressão condicional é:
 
 ```
-(cond (<p1> <e1>) (<p2> <e2>) ... (<pn> <en>))
+(cond ({p1} {e1}) ({p2} {e2}) ... ({pn} {en}))
 ```
 
-- Que consiste na _keyword_ `cond` seguida de **cláusulas** (_clauses_) que são pares de expressões entre parênteses (e.g., `(<p> <e>)`);
-- O primeiro parâmetro `<p>` de cada cláusula é um **predicado** (_predicate_), que são expressões cujo valores são avaliados para as constantes `#t` (`true`) ou `#f` (`false`).
+- Que consiste na _keyword_ `cond` seguida de **cláusulas** (_clauses_) que são pares de expressões entre parênteses (e.g., `({p} {e})`);
+- O primeiro parâmetro `{p}` de cada cláusula é um **predicado** (_predicate_), que são expressões cujo valores são avaliados para as constantes `#t` (`true`) ou `#f` (`false`).
 	- Caso o  valor de um predicado seja `#f`, o interpretador considera-o `false`;
 	- Qualquer outro valor é considerado `true`.
 
 ---
 
-- Na avaliação de uma expressão condicional, o predicado `<p1>` é avaliado primeiro, caso seu valor seja `false`, o predicado `<p2>` é avaliado, e assim por diante, até que um predicado com valor `true` seja avaliado;
-- O valor da expressão condicional é a **expressão consequente** (_consequent expression_) `<e>` do predicado com valor `true`;
+- Na avaliação de uma expressão condicional, o predicado `{p1}` é avaliado primeiro, caso seu valor seja `false`, o predicado `{p2}` é avaliado, e assim por diante, até que um predicado com valor `true` seja avaliado;
+- O valor da expressão condicional é a **expressão consequente** (_consequent expression_) `{e}` do predicado com valor `true`;
 - Caso nenhum predicado possua valor `true`, o valor da expressão condicional é `undefined`;
 
 > [!info]
@@ -342,7 +342,7 @@ $> (define (abs x)
 ```
 
 - Onde `else` é uma forma especial que pode ser usada para substituir um predicado na última cláusula de uma `cond`;
-- Ela faz com que o valor da expressão condicional seja o valor da expressão consequente `<e>` equivalente se todos predicados anteriores forem `false`;
+- Ela faz com que o valor da expressão condicional seja o valor da expressão consequente `{e}` equivalente se todos predicados anteriores forem `false`;
 	- Podemos considerá-la como sendo um "predicado que sempre é `true`";
 	- Assim, qualquer predicado que sempre seja `true` pode substituí-la (e.g., `(= 1 1)`).
 - Podemos ainda reescrever a função `abs` de outra forma:
@@ -358,27 +358,27 @@ $> (define (abs x)
 - A estrutura de uma expressão `if` é:
 
 ```
-(if <predicado> <consequencia> <alternativa>)
+(if {predicado} {consequencia} {alternativa})
 ```
 
-- Na avaliação de uma expressão `if`, o predicado é avaliado primeiro, caso seja `true`, o interpretador avalia a `<consequencia>` e faz com que expressão condicional tenha seu valor, senão, avalia a `<alternativa>` e faz com que a expressão condicional tenha seu valor.
+- Na avaliação de uma expressão `if`, o predicado é avaliado primeiro, caso seja `true`, o interpretador avalia a `{consequencia}` e faz com que expressão condicional tenha seu valor, senão, avalia a `{alternativa}` e faz com que a expressão condicional tenha seu valor.
 
 ---
 
 - Além dos predicados primitivos `>`, `<` e `=`, existem ainda **operadores lógicos** que permitem a criação de predicados complexos, como:
 
-> `(and <e1> ... <en>)` 
-> - O interpretador avalia todas expressões `<e>`, uma de cada vez, da esquerda pra direita;
+> `(and {e1} ... {en})`
+> - O interpretador avalia todas expressões `{e}`, uma de cada vez, da esquerda pra direita;
 > - Se alguma for `false`, o valor da expressão é `false`, e as outras expressões não são avaliadas;
-> - Se todas forem `true`, o valor da expressão é o mesmo da última `<e>`.
+> - Se todas forem `true`, o valor da expressão é o mesmo da última `{e}`.
 > ---
-> `(or <e1> ... <en>)` 
-> - O interpretador avalia todas expressões `<e>`, uma de cada vez, da esquerda pra direita;
-> - Se alguma for `true`, o valor da expressão é o mesmo da `<e>`, e as outras expressões não são avaliadas;
+> `(or {e1} ... {en})`
+> - O interpretador avalia todas expressões `{e}`, uma de cada vez, da esquerda pra direita;
+> - Se alguma for `true`, o valor da expressão é o mesmo da `{e}`, e as outras expressões não são avaliadas;
 > - Se todas forem `false`, o valor da expressão é `false`.
 > ---
-> `(not <e>)` 
-> - O valor da expressão é `true` quando `<e>` for `false`, e `false` quando `<e>` for `true`.
+> `(not {e})`
+> - O valor da expressão é `true` quando `{e}` for `false`, e `false` quando `{e}` for `true`.
 
 - Note que `and` e `or` são formas especiais porque nem todas subexpressões são avaliadas;
 - Com operadores lógicos podemos, por exemplo, verificar se um número está entre 5 e 10:
@@ -468,7 +468,7 @@ $> (sqrt 2)
             (sqrt)
                |
           (sqrt-iter)
-	       ____|____
+           ____|____
           /         \
    (good-enough)   (improve)
      ____|____         |
