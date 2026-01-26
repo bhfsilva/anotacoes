@@ -2,7 +2,7 @@
 title: sicp
 tags:
   - estudos
-updated-at: 26/01/2026 16:05
+updated-at: 11/02/2026 17:00
 created-at: 17/11/2025 20:48
 ---
 
@@ -34,5 +34,12 @@ created-at: 17/11/2025 20:48
 > 			- [Nomes locais.](dev/livros/sicp/capitulo-1/subcapitulo-1-1.md#Nomes%20locais)
 > 			- [Definição interna e estrutura de blocos.](dev/livros/sicp/capitulo-1/subcapitulo-1-1.md#Definição%20interna%20e%20estrutura%20de%20blocos)
 > 	- [1.2. Funções e os processos que elas geram.](dev/livros/sicp/capitulo-1/subcapitulo-1-2.md#1.2.%20Funções%20e%20os%20processos%20que%20elas%20geram)
-> 		- [1.2.1.Recursão e iteração lineares.](#1.2.1.%20Recursão%20e%20iteração%20lineares)
+> 		- [1.2.1. Recursão e iteração lineares.](dev/livros/sicp/capitulo-1/subcapitulo-1-2.md#1.2.1.%20Recursão%20e%20iteração%20lineares)
 > 		- [1.2.2. Recursão em árvore.](dev/livros/sicp/capitulo-1/subcapitulo-1-2.md#1.2.2.%20Recursão%20em%20árvore)
+> 		- [1.2.3. Ordens de crescimento.](dev/livros/sicp/capitulo-1/subcapitulo-1-2.md#1.2.3.%20Ordens%20de%20crescimento)
+> 		- [1.2.4. Exponenciação.](dev/livros/sicp/capitulo-1/subcapitulo-1-2.md#1.2.4.%20Exponenciação)
+> 		- [1.2.5. Máximo Divisor Comum.](dev/livros/sicp/capitulo-1/subcapitulo-1-2.md#1.2.5.%20Máximo%20Divisor%20Comum)
+> 		- [1.2.6. Exemplo: Testando Primalidade.](dev/livros/sicp/capitulo-1/subcapitulo-1-2.md#1.2.6.%20Exemplo%20Testando%20Primalidade)
+> 			- [Buscando divisores.](dev/livros/sicp/capitulo-1/subcapitulo-1-2.md#Buscando%20divisores)
+> 			- [O teste de Fermat.](dev/livros/sicp/capitulo-1/subcapitulo-1-2.md#O%20teste%20de%20Fermat)
+> 				- [Métodos probabilísticos.](dev/livros/sicp/capitulo-1/subcapitulo-1-2.md#Métodos%20probabilísticos)
