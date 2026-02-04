@@ -1,5 +1,5 @@
 ---
-updated-at: 26/01/2026 14:25
+updated-at: 04/02/2026 20:54
 created-at: 01/12/2025 22:42
 ---
 
@@ -468,7 +468,7 @@ $> (sqrt 2)
             (sqrt)
                |
           (sqrt-iter)
-	       ____|____
+           ____|____
           /         \
    (good-enough)   (improve)
      ____|____         |

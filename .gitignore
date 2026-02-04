@@ -1,3 +1,4 @@
 .obsidian
+.rclone-ignore
 *.md
 !/dev/livros/sicp/**/*.md
