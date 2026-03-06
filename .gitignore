@@ -1,0 +1,4 @@
+.obsidian
+.rclone-ignore
+*.md
+!/livros/sicp/**/*.md
