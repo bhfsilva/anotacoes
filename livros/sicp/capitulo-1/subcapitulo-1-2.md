@@ -1,5 +1,5 @@
 ---
-updated-at: 04/03/2026 15:18
+updated-at: 06/03/2026 22:58
 created-at: 15/12/2025 10:35
 ---
 
@@ -232,9 +232,9 @@ $> (fib 5)
 
 $$k_1f(n)\leq R(n)\leq k_2f(n)$$
 
-- Para [processos linearmente recursivos](subcapitulo-1-2.md#^linear-rec-proc-ref) o número de passos cresce proporcionalmente à entrada $n$;
+- Para [processos linearmente recursivos](#^linear-rec-proc-ref) o número de passos cresce proporcionalmente à entrada $n$;
 	- Assim, os passos e o espaço necessários para esse processo crescem como $\Theta(n)$.
-- Para o [processos linearmente iterativos](subcapitulo-1-2.md#^linear-iter-proc-ref), o número de passos ainda é $\Theta(n)$, porém o espaço é constante $\Theta(1)$;
+- Para o [processos linearmente iterativos](#^linear-iter-proc-ref), o número de passos ainda é $\Theta(n)$, porém o espaço é constante $\Theta(1)$;
 
 ---
 
@@ -267,8 +267,8 @@ $> (define (expt b n)
 		(* b (expt b (- n 1)))))
 ```
 
-- Essa definição de `expt` gera um [processo recursivo linear](subcapitulo-1-2.md#^linear-rec-proc-ref), que requer $\Theta(n)$ passos e $\Theta(n)$ espaço;
-- Podemos reformular essa definição para gerar um [processo iterativo linear](subcapitulo-1-2.md#^linear-iter-proc-ref):
+- Essa definição de `expt` gera um [processo recursivo linear](#^linear-rec-proc-ref), que requer $\Theta(n)$ passos e $\Theta(n)$ espaço;
+- Podemos reformular essa definição para gerar um [processo iterativo linear](#^linear-iter-proc-ref):
 
 ```scheme
 $> (define (expt b n)
